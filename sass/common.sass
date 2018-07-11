@@ -1,0 +1,101 @@
+// header
+header
+    height: 50px
+    background: #fcfcfc
+    a
+        display: inline-block
+        img
+            width: 28px
+            height: 28px
+    .hour
+        font-size: 15px
+        font-weight: bold
+        padding-right: 12px
+        &:hover
+            color: #333333
+        p
+            font-size: 12px
+            font-weight: normal
+            line-height: 13px
+    .liner
+        background: linear-gradient(to bottom, white,black,white)
+        width: 1px
+        height: 28px
+    .tel
+        font-size: 24px
+        color: #0da056
+        font-weight: bold
+        padding-left: 12px
+        height: 44px
+        line-height: 62px
+        vertical-align: bottom
+        font-family: Kalinga
+        letter-spacing: 1px
+// 头部导航
+.tablenet
+    background: #0da056
+    button
+        @media (max-width: 999px)
+            margin-top: 20px
+    .logo1
+        @media (max-width: 999px)
+            display: none
+    ul
+        li
+            @media (min-width: 1000px)
+                margin-left: 12px
+                margin-right: -10px
+                display: inline-block
+            @media (min-width: 1200px)
+                margin-left: 20px
+                margin-right: -20px
+            &:hover
+                background: #069237
+                a
+                    color: #fffc38
+            a
+                display: block
+                font-size: 14px
+                color: #ffffff
+                padding: 10px 6px
+                @media (min-width: 760px)
+                    padding: 30px 6px
+                    // margin-bottom: -10px
+                @media (min-width: 1000px)
+                    padding: 26px 10px
+                    font-size: 18px
+                @media (min-width: 1200px)
+                    padding: 26px 20px
+// 底部导航
+footer
+    background: #484848
+    color: #ffffff
+    padding-bottom: 20px
+    a
+        color: #ffffff
+        line-height: 28px
+        &:hover
+            color: #ffffff
+    p
+        line-height: 28px
+    h3
+        font-weight: normal
+        padding-top: 28px
+        padding-bottom: 20px
+    .qrcode
+        @media (min-width: 1000px)
+            text-align: center
+        .guanzhu
+            padding-top: 5px
+            font-size: 12px
+.copyright
+    background: #676868
+    padding-top: 6px
+    padding-bottom: 11px
+    p
+        color: #ffffff
+        font-size: 13px
+        @media (min-width: 1200px)
+            line-height: 43px
+    span
+        padding-left: 36px
