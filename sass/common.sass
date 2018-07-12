@@ -1,3 +1,4 @@
+@import '_color'
 // header
 header
     height: 50px
@@ -23,7 +24,7 @@ header
         height: 28px
     .tel
         font-size: 24px
-        color: #0da056
+        color: $green
         font-weight: bold
         padding-left: 12px
         height: 44px
@@ -33,7 +34,7 @@ header
         letter-spacing: 1px
 // 头部导航
 .tablenet
-    background: #0da056
+    background: $green
     button
         @media (max-width: 999px)
             margin-top: 20px
@@ -49,10 +50,16 @@ header
             @media (min-width: 1200px)
                 margin-left: 20px
                 margin-right: -20px
-            &:hover
+            &.active
                 background: #069237
+                color: $yellow
+                font-weight: normal
                 a
-                    color: #fffc38
+                    color: $yellow
+                    font-weight: normal
+            a
+                &:hover
+                    color: $yellow
             a
                 display: block
                 font-size: 14px
@@ -60,7 +67,6 @@ header
                 padding: 10px 6px
                 @media (min-width: 760px)
                     padding: 30px 6px
-                    // margin-bottom: -10px
                 @media (min-width: 1000px)
                     padding: 26px 10px
                     font-size: 18px
@@ -71,6 +77,7 @@ footer
     background: #484848
     color: #ffffff
     padding-bottom: 20px
+    margin-top: 21px
     a
         color: #ffffff
         line-height: 28px
@@ -99,3 +106,16 @@ footer
             line-height: 43px
     span
         padding-left: 36px
+//  标题公共部分
+.title-a
+    margin: 0 auto
+    display: block
+    padding-bottom: 18px
+    @media (max-width: 699px)
+        width: 100%
+.more
+    float: right
+    margin-top: -50px
+    color: $green
+    &:hover
+        color: $green
