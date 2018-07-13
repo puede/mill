@@ -168,6 +168,7 @@
         img
             padding-bottom: 20px
             padding-top: 10px
+// 联系我们
 .contact-a
     .contact-b
         text-align: center
@@ -240,3 +241,38 @@
                 @media (min-width: 1200px)
                     text-align: left !important
                     width: 10% !important
+// 产品中心
+.product-a
+    padding-top: 20px
+    .chanpin
+        margin: 0 auto
+        display: block
+        padding-bottom: 30px
+        padding-top: 5px
+    a
+        position: relative
+        width: 100%
+        p
+            position: absolute
+            width: 100%
+            line-height: 36px
+            height: 36px
+            text-align: center
+            bottom: 0
+            background: rgba($green,.9)
+            color: #ffffff
+            @media (max-width: 759px)
+                height: 30px
+                line-height: 30px
+                font-size: 14px
+        img
+            @media (max-width: 1199px)
+                width: 100%
+        &:hover
+            p
+                background: $yellow
+                color: $green
+                font-weight: bold
+    .product-a-1
+        // @media (max-width: 449px)
+        margin-bottom: 26px
