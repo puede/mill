@@ -453,3 +453,68 @@
         padding-bottom: 12px
     p
         padding-top: 27px
+// 新闻中心
+.news-a
+    padding-top: 15px
+    padding-bottom: 15px
+    h2
+        @media (min-width: 1000px) and (max-width: 1199px)
+            line-height: 44px
+            height: 44px
+    img
+        margin: 0 auto
+        display: block
+    .p-4
+        @media (min-width: 1000px) and (max-width: 1199px)
+            padding-top: 15px !important
+            padding-bottom: 10px !important
+        @media (min-width: 1200px)
+            padding-top: 28px !important
+    a
+        &:hover
+            p
+                @media (max-width: 999px)
+                    color: $green
+.news-c
+    padding-top: 33px
+    a
+        &:hover
+            h4
+                color: $green
+            p
+                color: #333333
+    h4
+        font-size: 16px
+        font-weight: normal
+        padding-bottom: 11px
+    p
+        line-height: 28px
+    .news-date
+        background: $green
+        color: #ffffff
+        padding: 12px
+        width: 98px
+        float: right
+        @media (max-width: 999px)
+            display: none
+    .date-a
+        font-size: 36px
+        font-weight: bold
+        text-align: center
+        padding-bottom: 6px
+    .date-b
+        font-size: 16px
+        text-align: center
+.pager
+    padding-top: 35px
+    li
+        a
+            border-radius: 0
+            @media (min-width: 500px)
+                padding: 6px 32px
+                margin-left: 5px
+                margin-right: 5px
+.xinwenkuaibao,.touzikuaibao
+    @media (max-width: 529px)
+        width: 100%
+        
