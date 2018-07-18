@@ -9,6 +9,7 @@
     .case
         .case-child
             margin-bottom: 34px
+            text-align: center
             a
                 position: relative
                 width: 100%
@@ -35,6 +36,9 @@
                 img
                     @media (max-width: 1199px)
                         width: 100%
+                    @media (min-width: 550px) and (max-width: 759px)
+                        width: auto
+                        
         h2
             font-size: 20px
             @media (max-width: 999px)
@@ -196,6 +200,8 @@
         p,span
             text-align: center
             font-size: 16px
+            @media (max-width: 450px)
+                font-size: 13px
         span
             font-weight: bold
         p
@@ -261,6 +267,8 @@
         display: block
         padding-bottom: 30px
         padding-top: 5px
+        @media (max-width: 449px)
+            width: 100%
     a
         position: relative
         width: 100%
