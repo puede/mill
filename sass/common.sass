@@ -88,12 +88,24 @@ footer
         line-height: 28px
         &:hover
             color: #ffffff
+    .liner-a
+        text-align: center
+        margin-top: 40px
+        @media (max-width: 999px)
+            display: none
+        .liner
+            background: linear-gradient(to bottom, #525252, #676868, #525252)
+            width: 1px !important
+            height: 100px !important
+            display: inline-block
     p
         line-height: 28px
     h3
         font-weight: normal
         padding-top: 28px
         padding-bottom: 20px
+        @media (min-width: 1000px) and (max-width: 1199px)
+            font-size: 15px
     .qrcode
         @media (min-width: 1000px)
             text-align: center
@@ -140,7 +152,7 @@ footer
         width: 100%
         position: fixed
         background: #fff
-        bottom: 0
+        bottom: 0 
         color: #999
         font-size: 28px
         cursor: pointer
@@ -159,6 +171,8 @@ footer
             float: left
             text-align: center
             cursor: pointer
+            line-height: 24px
+            margin-top: 10px
 .stickey-footer
     @media(min-width:760px)
         display: none
