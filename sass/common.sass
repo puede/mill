@@ -72,6 +72,13 @@ header
                     font-size: 18px
                 @media (min-width: 1200px)
                     padding: 26px 20px
+    // button菜单栏
+    .icon-navicon:before, .icon-reorder:before, .icon-bars:before
+        color: #ffffff
+    .button
+        border: 1px solid #ffffff
+    .button:hover, .button:focus, .button.bg:hover, .button.bg:focus
+        background: none
 // banner
 .banner
     img
@@ -83,6 +90,8 @@ footer
     color: #ffffff
     padding-bottom: 20px
     margin-top: 21px
+    @media (max-width: 759px)
+        margin-bottom: 35px
     a
         color: #ffffff
         line-height: 28px
@@ -114,7 +123,7 @@ footer
             font-size: 12px
         img
             @media (max-width: 499px)
-                width: 100%
+                width: auto
 .copyright
     background: #676868
     padding-top: 6px
@@ -167,7 +176,7 @@ footer
         .main-menu .aa span
             font-size: 28px
         .main-menu .aa
-            width: 20%
+            width: 25%
             float: left
             text-align: center
             cursor: pointer
@@ -182,12 +191,14 @@ footer
   
 .doc-backtop
     position: fixed
-    right: 5px
-    bottom: 100px
+    right: 20px
+    bottom: 40px
     color: #999
     font-size: 30px
     cursor: pointer
     z-index: 9
+    @media (max-width: 759px)
+        display: none
 .doc-backtop:hover
     color: $green
 
