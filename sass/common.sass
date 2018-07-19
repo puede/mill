@@ -190,3 +190,34 @@ footer
     z-index: 9
 .doc-backtop:hover
     color: $green
+
+// 公共头部标题
+.common-title
+    margin-bottom: 20px
+    font-weight: bold
+    color: $green
+    font-family: yrzt
+    font-size: 26px
+    @media (min-width: 760px)
+        padding-top: 9px
+        padding-bottom: 25px
+        font-size: 30px
+        width: 260px
+        margin: 0 auto
+    span
+        background: url("../img/bg.jpg") repeat
+        padding-left: 13px
+        padding-right: 7px
+    @media (min-width: 1000px)
+        &:after,&:before
+            content: ""
+            border-top: 1px solid $green
+            position: absolute
+        &:after
+            width: 116px
+            margin-top: 16px
+            margin-left: 15px
+        &:before
+            width: 116px
+            margin-top: 16px
+            margin-left: -132px
